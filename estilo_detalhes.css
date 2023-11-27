@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.faixa {
+    background-color: #0b8adf; 
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+.texto-faixa {
+    color: white; 
+    font-family: 'Alumni Sans Inline One', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+  }
+  
+.botao-sair {
+    background-color: #080808; 
+    color: white; 
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+.botao-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.botao-container button {
+  background-color: #040404;
+  color: white; 
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.carta-jogador {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+  width: 200px;
+}
+
+.carta-jogador button {
+  background-color: black; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer;
+  display: block; 
+  margin: 10px auto 0; 
+}
+
+.carta-masculino {
+  background-color: #c1ffc9; 
+  width: 270px;
+  
+}
+
+.carta-feminino {
+  background-color: #ffb6c1; 
+  width: 270px;
+  
+}
+
+.carta-todos {
+  background-color: #0b8adf; 
+  width: 270px;
+  
+}
+
+.modal-overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 100; 
+}
+
+.conteudo-modal {
+  text-align: center;
+}
+
+.foto-jogador {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.nome-jogador {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descricao-jogador {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .faixa {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .texto-faixa {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .botao-container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .botao-container button {
+    margin: 5px 0;
+  }
+
+  .carta-jogador {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
